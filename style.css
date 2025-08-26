@@ -1,6 +1,14 @@
 @import "tailwindcss";
 
 .banner {
-text-align: center;
-
+  text-align: center;
+}
+.hind-madurai {
+  font-family: "Hind Madurai", sans-serif;
+}
+.card-1 {
+  max-width: 350px;
+  padding: 25px;
+  background-color:white;
+  border-radius: 6px;
 }
