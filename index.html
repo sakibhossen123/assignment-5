@@ -33,10 +33,10 @@
   <body class="hind-madurai">
     <!-- navbar  start here-->
     <section
-      class="navbar flex items-center justify-between shadow m- p-5 max-w-[1400px] mx-auto"
+      class="navbar flex items-center justify-between shadow m- p-5 max-w-[1400px] mx-auto md:grid grid "
     >
       <div class="flex items-center">
-        <img class="w-15" src="./assets/logo.png" alt="" />
+        <img class="w-15 " src="./assets/logo.png" alt="" />
         <h1 class="text-2xl font-bold text-green-700">
           Emergency <br />
           Servise
@@ -79,10 +79,12 @@
     </section>
     <!-- banner stop from here -->
     <!-- card section start from here -->
-    <section class=" grid grid-cols-12 bg-[#f5fff6] ">
-      <div class="col-span-9 grid grid-cols-3 gap-4 mx-2 my-8 ml-9">
+    <section class="grid grid-cols-12 bg-[#f5fff6]">
+      <div
+        class="col-span-9 grid md:grid-cols-3 gap-4 mx-2 my-8 ml-9 grid-cols-1"
+      >
         <div class="shadow card-1">
-          <div class="flex items-center gap-[200px]">
+          <div class="flex items-center justify-between">
             <img
               class="bg-[#ffe3e2] w-[50px] p-2 rounded-2xl"
               src="./assets/emergency.png"
@@ -104,7 +106,7 @@
           </div>
         </div>
         <div class="shadow card-1">
-          <div class="flex items-center gap-[200px]">
+          <div class="flex items-center justify-between">
             <img
               class="bg-[#dfefff] w-[50px] p-2 rounded-2xl"
               src="./assets/police.png"
@@ -126,7 +128,7 @@
           </div>
         </div>
         <div class="shadow card-1">
-          <div class="flex items-center gap-[200px]">
+          <div class="flex items-center justify-between">
             <img
               class="bg-[#ffe3e2] w-[50px] p-2 rounded-2xl"
               src="./assets/fire-service.png"
@@ -148,7 +150,7 @@
           </div>
         </div>
         <div class="shadow card-1">
-          <div class="flex items-center gap-[200px]">
+          <div class="flex items-center justify-between">
             <img
               class="bg-[#ffe3e2] w-[50px] p-2 rounded-2xl"
               src="./assets/ambulance.png"
@@ -159,7 +161,7 @@
           <h1 class="text-2xl font-bold">Ambulance Service</h1>
           <p class="font-semibold">Ambulance</p>
           <p class="font-bold text-2xl">1994-999999</p>
-          <button class="btn bg-gray-300 rounded-3xl">Health </button>
+          <button class="btn bg-gray-300 rounded-3xl">Health</button>
           <div class="flex gap-2 mt-2">
             <button class="btn btn-active text-gray-600 w-[50%] font-semibold">
               <i class="fa-solid fa-copy"></i> <span>0</span> Copy
@@ -170,7 +172,7 @@
           </div>
         </div>
         <div class="shadow card-1">
-          <div class="flex items-center gap-[200px]">
+          <div class="flex items-center justify-between">
             <img
               class="bg-[#ffe3e2] w-[50px] p-2 rounded-2xl"
               src="./assets/emergency.png"
@@ -192,7 +194,7 @@
           </div>
         </div>
         <div class="shadow card-1">
-          <div class="flex items-center gap-[200px]">
+          <div class="flex items-center justify-between">
             <img
               class="bg-[#ffe3e2] w-[50px] p-2 rounded-2xl"
               src="./assets/emergency.png"
@@ -214,7 +216,7 @@
           </div>
         </div>
         <div class="shadow card-1">
-          <div class="flex items-center gap-[200px]">
+          <div class="flex items-center justify-between">
             <img
               class="bg-[#ffe3e2] w-[50px] p-2 rounded-2xl"
               src="./assets/emergency.png"
@@ -236,7 +238,7 @@
           </div>
         </div>
         <div class="shadow card-1">
-          <div class="flex items-center gap-[200px]">
+          <div class="flex items-center justify-between">
             <img
               class="bg-[#ffe3e2] w-[50px] p-2 rounded-2xl"
               src="./assets/emergency.png"
@@ -258,7 +260,7 @@
           </div>
         </div>
         <div class="shadow card-1">
-          <div class="flex items-center gap-[200px]">
+          <div class="flex items-center justify-between">
             <img
               class="bg-[#ffe3e2] w-[50px] p-2 rounded-2xl"
               src="./assets/emergency.png"
@@ -266,7 +268,7 @@
             />
             <p><i class="fa-regular fa-heart"></i></p>
           </div>
-          <h1 class="text-2xl font-bold">Bangladesh Railway Helpline </h1>
+          <h1 class="text-2xl font-bold">Bangladesh Railway Helpline</h1>
           <p class="font-semibold">Bangladesh Railway</p>
           <p class="font-bold text-2xl">163</p>
           <button class="btn bg-gray-300 rounded-3xl">Travel</button>
@@ -281,14 +283,57 @@
         </div>
       </div>
 
-      <div class="bg-white col-span-3 flex justify-between p-4 shadow my-6 mx-4">
-        <h1 class="font-semibold">
-          <i class="fa-solid fa-clock"></i>Call History
-        </h1>
-        <button class="btn btn-active btn-success text-white rounded-2xl">
-          Clear
-        </button>
+      <div class="bg-white col-span-3 p-4 shadow mx-4 my-6 hidden md:block ">
+        <div class="flex justify-between">
+          <h1 class="font-semibold">
+            <i class="fa-solid fa-clock"></i>Call History
+          </h1>
+          <button class="btn btn-active btn-success text-white rounded-2xl">
+            Clear
+          </button>
+        </div>
+
+        <div
+          class="shadow mt-2 p-3 flex justify-between items-center bg-[#fafafa] rounded-xl"
+        >
+          <div>
+            <h1>Fire Servise Number</h1>
+            <p>999</p>
+          </div>
+          <div>12-59-32</div>
+        </div>
+        
       </div>
+      <div class="dropdown dropdown-end mt-6 block md:hidden">
+  <div tabindex="0" role="button" class="btn m-1">History</div>
+  <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+    <li> <div class="bg-white p-4 shadow">
+        <div class="flex justify-between">
+          <h1 class="font-semibold">
+            <i class="fa-solid fa-clock"></i>Call History
+          </h1>
+          <button class="btn btn-active btn-success text-white rounded-2xl">
+            Clear
+          </button>
+        </div>
+
+        <div
+          class="shadow mt-2 p-3 flex justify-between rounded-xl"
+        >
+          <div>
+            <h1>Fire Servise Number</h1>
+            <p>999</p>
+          </div>
+          <div>12-59-32</div>
+        </div></li>
+  
+  </ul>
+</div>
+      
+
+       
+       
+      
     </section>
   </body>
 </html>
