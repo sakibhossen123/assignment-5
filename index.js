@@ -1,5 +1,14 @@
-//   heart section create
+// common use function
+function getElement(id){
+  const element = document.getElementById(id);
+  return element;
+}
 
+
+
+
+
+//   heart section create
 
 
 const whiteHearts = document.getElementsByClassName("whiteHeart");
@@ -7,14 +16,73 @@ const redHearts = document.getElementById("redHeart");
 
 let count = 0;
 
-
-for (let whiteHeartse of whiteHearts){
-    whiteHeartse.addEventListener("click" , function () { count++;
-        document.getElementById("redHeart").innerText = count;
-    })
+for (let whiteHeartse of whiteHearts) {
+  whiteHeartse.addEventListener("click", function () {
+    count++;
+    document.getElementById("redHeart").innerText = count;
+  });
 }
 
+// copy section start from here
 
-// copy section start from here 
+const cardCopy = document.getElementsByClassName("copyBtn");
+const navcopy = document.getElementById("copyCount");
 
-    
+let count2 = 0;
+
+for (let cardCopys of cardCopy) {
+  cardCopys.addEventListener("click", function () {
+    count2++;
+    document.getElementById("copyCount").innerText = count2;
+  });
+}
+
+// call  button feature -------------
+const cardButtons = document.getElementsByClassName("callBtn");
+let navCoin = getElement("callCoin").innerText;
+
+
+let count3 = 20;
+
+for( let cardButton of cardButtons){
+  cardButton.addEventListener("click",function(){
+    if (navCoin < 20){
+      alert("❌ You don't have enough coins.");
+      return;
+    }
+
+
+
+    // travarsee for finding card title and number
+
+const title = cardButton.parentNode.parentNode.children[1].innerText;
+const number = cardButton.parentNode.parentNode.children[3].innerText;
+// time printing feature section
+const Time = new Date();
+const time = Time.toLocaleTimeString();
+// aleart section start
+alert("📞Calling" + title + " " + number + "...");
+let currentCoin = (navCoin -= count3);
+getElement("callCoin").innerText = currentCoin;
+// class history section start
+const callHistory = getElement("history-container");
+const newHistory = document.createElement("div");
+newHistory.innerHTML =`<div
+            class="flex items-center justify-between bg-gray-100 p-3 rounded-[8px] mb-2"
+          >
+            <div>
+              <h1 class="text-[15px] font-bold">${title}</h1>
+              <p class="text-[#5c5c5c]">${number}</p>
+            </div>
+            <div><p></p>${time}</div>
+          </div>`;
+          callHistory.append(newHistory);
+
+  });
+}
+// history clear button feature
+const clear = document.getElementById("clearButton");
+clear.addEventListener("click",function(){
+  getElement("history-container").innerHTML = "";
+});
+

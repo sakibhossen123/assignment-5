@@ -7,7 +7,7 @@
   font-family: "Hind Madurai", sans-serif;
 }
 .card-1 {
-  max-width: 350px;
+  width: 350px;
   padding: 25px;
   background-color:white;
   border-radius: 6px;
