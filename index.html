@@ -33,7 +33,7 @@
   <body class="hind-madurai">
     <!-- navbar  start here-->
     <section
-      class="navbar flex items-center justify-between shadow m- p-5 max-w-[1400px] mx-auto  "
+      class="navbar flex items-center justify-between shadow m- p-5 max-w-full "
     >
       <div class="flex items-center">
         <img class="w-15 " src="./assets/logo.png" alt="" />
@@ -44,12 +44,12 @@
       </div>
       <div>
         <button class="btn bg-[#41ff6b1a] rounded-3xl">
-          <span>0</span>
+          <span id="redHeart">0</span>
 
           <img class="w-6" src="./assets/heart.png" alt="" />
         </button>
-        <button class="button-2 btn bg-[#41ff6b1a] rounded-3xl">
-          <span>0</span>
+        <button id="" class="button-2 btn bg-[#41ff6b1a] rounded-3xl">
+          <span id="">0</span>
 
           <img class="w-6" src="./assets/coin.png" alt="" />
         </button>
@@ -64,7 +64,7 @@
     <!-- navbar close  -->
     <!-- banner start here -->
     <section
-      class="bg-gradient-to-r from-green-800 via-red-00 to-green-900 p-4 max-w-[1400px] mx-auto"
+      class="bg-gradient-to-l from-[#013223]  via-[#006747] to-[#013223] p-4 max-w-full "
     >
       <div class="">
         <img class="m-auto w-[100px]" src="./assets/logo.png" alt="" />
@@ -83,16 +83,16 @@
       <div
         class="col-span-9 grid md:grid-cols-3 gap-4 mx-2 my-8 ml-9 grid-cols-1"
       >
-        <div class="shadow card-1">
+        <div   class="shadow card-1">
           <div class="flex items-center justify-between">
             <img
               class="bg-[#ffe3e2] w-[50px] p-2 rounded-2xl"
               src="./assets/emergency.png"
               alt=""
             />
-            <p><i class="fa-regular fa-heart"></i></p>
+      <button class="whiteHeart"><i  class="fa-regular fa-heart "></i></button>
           </div>
-          <h1 class="text-2xl font-bold">National Emergency Number</h1>
+          <h1 class="text-xl font-bold">National Emergency Number</h1>
           <p class="font-semibold">National Emergency</p>
           <p class="font-bold text-2xl">999</p>
           <button class="btn bg-gray-300 rounded-3xl">All</button>
@@ -100,7 +100,7 @@
             <button class="btn btn-active text-gray-600 w-[50%] font-semibold">
               <i class="fa-solid fa-copy"></i> <span>0</span> Copy
             </button>
-            <button class="btn btn-active btn-success text-white w-[50%]">
+            <button id="card-one" class="btn btn-active btn-success text-white w-[50%]">
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
@@ -112,9 +112,9 @@
               src="./assets/police.png"
               alt=""
             />
-            <p><i class="fa-regular fa-heart"></i></p>
+            <button class="whiteHeart"><i class="fa-regular fa-heart"></i></button>
           </div>
-          <h1 class="text-2xl font-bold">Police Helpline Number</h1>
+          <h1 class="text-xl font-bold">Police Helpline Number</h1>
           <p class="font-semibold">Police</p>
           <p class="font-bold text-2xl">999</p>
           <button class="btn bg-gray-300 rounded-3xl">Police</button>
@@ -134,9 +134,9 @@
               src="./assets/fire-service.png"
               alt=""
             />
-            <p><i class="fa-regular fa-heart"></i></p>
+            <button class="whiteHeart"><i class="fa-regular fa-heart"></i></button>
           </div>
-          <h1 class="text-2xl font-bold">Fire Service Number</h1>
+          <h1 class="text-xl font-bold">Fire Service Number</h1>
           <p class="font-semibold">Fire Service</p>
           <p class="font-bold text-2xl">999</p>
           <button class="btn bg-gray-300 rounded-3xl">Fire</button>
@@ -156,9 +156,9 @@
               src="./assets/ambulance.png"
               alt=""
             />
-            <p><i class="fa-regular fa-heart"></i></p>
+            <button class="whiteHeart"><i class="fa-regular fa-heart"></i></button>
           </div>
-          <h1 class="text-2xl font-bold">Ambulance Service</h1>
+          <h1 class="text-xl font-bold">Ambulance Service</h1>
           <p class="font-semibold">Ambulance</p>
           <p class="font-bold text-2xl">1994-999999</p>
           <button class="btn bg-gray-300 rounded-3xl">Health</button>
@@ -178,9 +178,9 @@
               src="./assets/emergency.png"
               alt=""
             />
-            <p><i class="fa-regular fa-heart"></i></p>
+            <button class="whiteHeart"><i class="fa-regular fa-heart"></i></button>
           </div>
-          <h1 class="text-2xl font-bold">Women & Child Helpline</h1>
+          <h1 class="text-xl font-bold">Women & Child Helpline</h1>
           <p class="font-semibold">Women & Child Helpline</p>
           <p class="font-bold text-2xl">109</p>
           <button class="btn bg-gray-300 rounded-3xl">help</button>
@@ -200,9 +200,10 @@
               src="./assets/emergency.png"
               alt=""
             />
-            <p><i class="fa-regular fa-heart"></i></p>
+            <button class="whiteHeart"><i class="fa-regular fa-heart"></i></button>
+    
           </div>
-          <h1 class="text-2xl font-bold">Anti-Corruption Helpline</h1>
+          <h1 class="text-xl font-bold">Anti-Corruption Helpline</h1>
           <p class="font-semibold">Anti-Corruption</p>
           <p class="font-bold text-2xl">106</p>
           <button class="btn bg-gray-300 rounded-3xl">Govt.</button>
@@ -222,9 +223,9 @@
               src="./assets/emergency.png"
               alt=""
             />
-            <p><i class="fa-regular fa-heart"></i></p>
+            <button class="whiteHeart"><i class="fa-regular fa-heart"></i></button>
           </div>
-          <h1 class="text-2xl font-bold">Electricity Helpline</h1>
+          <h1 class="text-xl font-bold">Electricity Helpline</h1>
           <p class="font-semibold">Electricity Outage</p>
           <p class="font-bold text-2xl">16216</p>
           <button class="btn bg-gray-300 rounded-3xl">Electricity</button>
@@ -244,9 +245,9 @@
               src="./assets/emergency.png"
               alt=""
             />
-            <p><i class="fa-regular fa-heart"></i></p>
+            <button class="whiteHeart"><i class="fa-regular fa-heart"></i></button>
           </div>
-          <h1 class="text-2xl font-bold">Brac Helpline</h1>
+          <h1 class="text-xl font-bold">Brac Helpline</h1>
           <p class="font-semibold">Brac</p>
           <p class="font-bold text-2xl">16445</p>
           <button class="btn bg-gray-300 rounded-3xl">NGO</button>
@@ -266,9 +267,9 @@
               src="./assets/emergency.png"
               alt=""
             />
-            <p><i class="fa-regular fa-heart"></i></p>
+            <button class="whiteHeart"><i class="fa-regular fa-heart"></i></button>
           </div>
-          <h1 class="text-2xl font-bold">Bangladesh Railway Helpline</h1>
+          <h1 class="text-xl font-bold">Bangladesh Railway Helpline</h1>
           <p class="font-semibold">Bangladesh Railway</p>
           <p class="font-bold text-2xl">163</p>
           <button class="btn bg-gray-300 rounded-3xl">Travel</button>
@@ -335,5 +336,7 @@
        
       
     </section>
+
+    <script src="./index.js"></script>
   </body>
 </html>
