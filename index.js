@@ -72,7 +72,7 @@ const copybtns = document.getElementsByClassName("cardCopyBtn");
 let count4 = 0;
 for (let copybtn of copybtns) {
   copybtn.addEventListener("click", function () {
-    alert("test");
+    alert("Number is Copied succesfully");
     count4++;
     document.getElementById("navCopy").innerText = count4;
     const hotline = copybtn.parentNode.parentNode.children[3].innerText;
