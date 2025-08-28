@@ -75,5 +75,6 @@ for (let copybtn of copybtns) {
     alert("test");
     count4++;
     document.getElementById("navCopy").innerText = count4;
-  });
-}
+    const hotline = copybtn.parentNode.parentNode.children[3].innerText;
+    navigator.clipboard.writeText(hotline);
+})};
